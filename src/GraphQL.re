@@ -67,7 +67,7 @@ module Execution = {
 
 module Utilities = {
   [@bs.module "graphql"]
-  external buildSchema : string => Type.schema = "buildSchema";
+  external buildSchema: string => Type.schema = "buildSchema";
 };
 
 module Validation = {
@@ -75,7 +75,7 @@ module Validation = {
 };
 
 [@bs.module "graphql"]
-external graphql :
+external graphql:
   Execution.executionArgs(
     'rootObjType,
     'contextObjType,
