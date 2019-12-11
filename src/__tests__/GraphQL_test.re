@@ -52,4 +52,22 @@ let () = {
          );
     })
   );
+
+  describe("Utilities#printSchema", () =>
+    test("prints a usable schema with nested types", () => {
+      let schema =
+        GraphQL.Utilities.buildSchema(
+          "type Query { me: User } type User { name: String }",
+        );
+      expect(GraphQL.Utilities.printSchema(schema))
+      |> toEqual({|type Query {
+  me: User
+}
+
+type User {
+  name: String
+}
+|});
+    })
+  );
 };

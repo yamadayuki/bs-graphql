@@ -68,6 +68,9 @@ module Execution = {
 module Utilities = {
   [@bs.module "graphql"]
   external buildSchema: string => Type.schema = "buildSchema";
+
+  [@bs.module "graphql"]
+  external printSchema: Type.schema => string = "printSchema";
 };
 
 module Validation = {

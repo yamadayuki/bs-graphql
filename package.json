@@ -5,11 +5,11 @@
   "author": "yamadayuki",
   "bugs": "https://github.com/yamadayuki/bs-graphql/issues",
   "dependencies": {
-    "graphql": "^14.3.1"
+    "graphql": "^14.5.8"
   },
   "devDependencies": {
-    "@glennsl/bs-jest": "^0.4.8",
-    "bs-platform": "^5.0.4"
+    "@glennsl/bs-jest": "^0.4.9",
+    "bs-platform": "^7.0.1"
   },
   "homepage": "https://github.com/yamadayuki/bs-graphql",
   "keywords": [
